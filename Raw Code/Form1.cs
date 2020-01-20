@@ -17,6 +17,7 @@ namespace Zadatak_01
         Form2 f2 = new Form2();
         public static int numberOfStars = 0;
         List<Zvijezda> listOfStars;
+        
         public Form1()
         {
             InitializeComponent();
@@ -138,12 +139,13 @@ namespace Zadatak_01
                 MessageBox.Show("Enter valid number of stars!");
                 InitializeComponent();
             }
+            
             if (listOfStars.Count == 0)
             {
                 MessageBox.Show("Database is empty!");
                 InitializeComponent();
             }
-            else if(numberOfStars > listOfStars.Count - 1)
+            else if((int)float.Parse(number.Text) > listOfStars.Count - 1)
             {
                 MessageBox.Show("Too few stars in database!");
                 InitializeComponent();
