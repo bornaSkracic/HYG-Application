@@ -72,7 +72,7 @@ namespace Zadatak_01
             int solY = yMax / 2;
 
             int yPrevious = 0;
-            for (int i = 1; i < Form1.numberOfStars; i++)
+            for (int i = 1; i <= Form1.numberOfStars; i++)
             {
                 Zvijezda star = new Zvijezda();
                 star = listOfSTar[i];
